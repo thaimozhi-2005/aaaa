@@ -4,7 +4,7 @@ from datetime import datetime
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from config import OWNER_ID
-from database.database import db
+from database.database import *
 
 logger = logging.getLogger(__name__)
 
