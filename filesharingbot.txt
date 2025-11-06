@@ -1,0 +1,1174 @@
+[06-Nov-25 16:09:22 - INFO] - __main__ - Bot Running..!
+
+Created by 
+https://t.me/SSbotz_Support
+[06-Nov-25 16:09:22 - INFO] - __main__ -        
+
+
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+ 
+                                          
+[06-Nov-25 16:09:22 - INFO] - __main__ - Bot Running..! Made by @SS_botz
+[06-Nov-25 16:09:23 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 16:18:18 - INFO] - __main__ - Shutting down...
+[06-Nov-25 16:18:18 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 16:18:23 - INFO] - __main__ - Bot Running..!
+
+Created by 
+https://t.me/SSbotz_Support
+[06-Nov-25 16:18:23 - INFO] - __main__ -        
+
+
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+ 
+                                          
+[06-Nov-25 16:18:23 - INFO] - __main__ - Bot Running..! Made by @SS_botz
+[06-Nov-25 16:18:24 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 16:46:51 - INFO] - __main__ - Shutting down...
+[06-Nov-25 16:46:51 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 16:46:57 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 16:46:57 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 16:46:57 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 16:47:27 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:77> exception=ServerSelectionTimeoutError("SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c83a8c0c4b2a5f1fe41d0, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 79, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c83a8c0c4b2a5f1fe41d0, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 16:47:27 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x74d8518262d0>
+[06-Nov-25 16:53:48 - INFO] - __main__ - Shutting down...
+[06-Nov-25 16:53:48 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 16:53:53 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 16:53:53 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 16:53:53 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 16:54:06 - ERROR] - plugins.uptime - Error in /addbot: Client.listen() got multiple values for argument 'filters'
+[06-Nov-25 16:54:23 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:77> exception=ServerSelectionTimeoutError("SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8548f9fc7a480e20cd43, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 79, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8548f9fc7a480e20cd43, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 16:54:23 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x714c5889a570>
+[06-Nov-25 16:54:43 - ERROR] - plugins.uptime - Error in /addbot: Client.listen() got multiple values for argument 'filters'
+[06-Nov-25 16:55:02 - ERROR] - plugins.uptime - Error in /status: SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8548f9fc7a480e20cd43, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 16:55:08 - ERROR] - plugins.uptime - Error in /removebot: SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8548f9fc7a480e20cd43, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 16:57:50 - ERROR] - plugins.uptime - Error in /addbot: Client.listen() got multiple values for argument 'filters'
+[06-Nov-25 16:58:04 - ERROR] - plugins.uptime - Error in /addbot: Client.listen() got multiple values for argument 'filters'
+[06-Nov-25 16:58:26 - ERROR] - plugins.uptime - Error in /addbot: Client.listen() got multiple values for argument 'filters'
+[06-Nov-25 16:59:52 - INFO] - __main__ - Shutting down...
+[06-Nov-25 16:59:52 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 16:59:59 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 16:59:59 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 16:59:59 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 17:00:11 - ERROR] - plugins.uptime - Error in /addbot: Client.listen() got multiple values for argument 'filters'
+[06-Nov-25 17:00:29 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:77> exception=ServerSelectionTimeoutError("SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c86b6801d44f2697f1bf6, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 79, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c86b6801d44f2697f1bf6, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 17:00:29 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x78d42cdfa570>
+[06-Nov-25 17:06:12 - INFO] - __main__ - Shutting down...
+[06-Nov-25 17:06:12 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 17:11:01 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 17:11:01 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 17:11:01 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 17:11:12 - ERROR] - plugins.uptime - Error in /addbot: Client.listen() got multiple values for argument 'filters'
+[06-Nov-25 17:11:32 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:77> exception=ServerSelectionTimeoutError("SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c894cae0eac15901a7110, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 79, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c894cae0eac15901a7110, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 17:11:32 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x76d4cc4fe510>
+[06-Nov-25 17:15:08 - INFO] - __main__ - Shutting down...
+[06-Nov-25 17:15:08 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 17:17:03 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 17:17:03 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 17:17:03 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 17:17:34 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:77> exception=ServerSelectionTimeoutError("SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8ab6015978faaa6a35dc, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 79, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8ab6015978faaa6a35dc, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 17:17:34 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x775be9635520>
+[06-Nov-25 17:22:46 - INFO] - __main__ - Shutting down...
+[06-Nov-25 17:22:46 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 17:22:51 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 17:22:51 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 17:22:51 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 17:23:21 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:77> exception=ServerSelectionTimeoutError("ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8c12712f08ca05b972e7, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 79, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8c12712f08ca05b972e7, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 17:23:21 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x79daba43a1b0>
+[06-Nov-25 17:24:04 - ERROR] - plugins.uptime - Error in /addbot: Client.listen() got multiple values for argument 'filters'
+[06-Nov-25 17:27:21 - INFO] - __main__ - Shutting down...
+[06-Nov-25 17:27:21 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 17:27:25 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 17:27:25 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 17:27:26 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 17:27:56 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:96> exception=ServerSelectionTimeoutError("ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8d247662c699c532109a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 98, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8d247662c699c532109a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 17:27:56 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7e2907d86b70>
+[06-Nov-25 17:30:31 - INFO] - __main__ - Shutting down...
+[06-Nov-25 17:30:31 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 17:36:56 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 17:36:56 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 17:36:56 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 17:37:26 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:96> exception=ServerSelectionTimeoutError("ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8f5f4fc1d5eadf737cc8, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 98, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690c8f5f4fc1d5eadf737cc8, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 17:37:26 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x79512879cf50>
+[06-Nov-25 17:37:49 - ERROR] - plugins.uptime - Error in /addbot: Client.listen() got multiple values for argument 'filters'
+[06-Nov-25 17:42:14 - INFO] - __main__ - Shutting down...
+[06-Nov-25 17:42:14 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 17:42:19 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 17:42:19 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 17:42:19 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 17:42:21 - ERROR] - plugins.uptime - Error in /addbot: Client.listen() got multiple values for argument 'filters'
+[06-Nov-25 17:42:37 - INFO] - __main__ - Shutting down...
+[06-Nov-25 17:42:37 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 19:40:09 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 19:40:09 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 19:40:09 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 19:40:31 - ERROR] - plugins.uptime - Error in /addbot: Client.listen() got multiple values for argument 'filters'
+[06-Nov-25 19:40:39 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:96> exception=ServerSelectionTimeoutError("ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cac3fffc6e3ffd3d3310a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 98, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cac3fffc6e3ffd3d3310a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 19:40:39 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fe7300dab10>
+[06-Nov-25 19:41:04 - ERROR] - plugins.uptime - Error in /removebot: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cac3fffc6e3ffd3d3310a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 19:45:36 - INFO] - __main__ - Shutting down...
+[06-Nov-25 19:45:36 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 19:46:43 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 19:46:43 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 19:46:43 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 19:47:13 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:96> exception=ServerSelectionTimeoutError("ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cadcaed10cb37f3c1d598, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 98, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cadcaed10cb37f3c1d598, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 19:47:13 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7798240f1070>
+[06-Nov-25 19:47:59 - ERROR] - plugins.uptime - Error in /addbot: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cadcaed10cb37f3c1d598, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 19:48:19 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection timed out
+[06-Nov-25 19:48:53 - ERROR] - plugins.uptime - Error in /removebot: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cadcaed10cb37f3c1d598, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 19:50:45 - INFO] - __main__ - Shutting down...
+[06-Nov-25 19:50:45 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 19:53:53 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 19:53:53 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 19:53:54 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 19:54:24 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:96> exception=ServerSelectionTimeoutError("ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690caf78748f6544a8e55cf0, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 98, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690caf78748f6544a8e55cf0, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 19:54:24 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x76c1c6b7ab70>
+[06-Nov-25 20:02:43 - INFO] - __main__ - Shutting down...
+[06-Nov-25 20:02:43 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 20:04:19 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 20:04:19 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 20:04:19 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 20:04:49 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:96> exception=ServerSelectionTimeoutError("ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cb1ea69145191a711a530, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 98, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cb1ea69145191a711a530, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 20:04:49 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x774ee1b7b560>
+[06-Nov-25 20:14:49 - INFO] - __main__ - Shutting down...
+[06-Nov-25 20:14:49 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 20:14:57 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 20:14:57 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 20:14:57 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 20:15:27 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:96> exception=ServerSelectionTimeoutError("ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cb467fa7280d98b774a3a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 98, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cb467fa7280d98b774a3a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 20:15:27 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7c7451ac50d0>
+[06-Nov-25 20:15:59 - ERROR] - plugins.uptime - Error in /addbot: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cb467fa7280d98b774a3a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: connection closed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 20:19:09 - INFO] - __main__ - Shutting down...
+[06-Nov-25 20:19:09 - INFO] - __main__ - Bot stopped.
+[06-Nov-25 20:20:16 - INFO] - __main__ - Bot Running..!
+
+Created by https://t.me/SSbotz_Support
+[06-Nov-25 20:20:16 - INFO] - __main__ - 
+ _______ ______   ___  ___ _____ _____ 
+/   ___//  ___/  | _ )/ _ \_   _/ _   /
+\____ \\____ \   | _ \ (_) || |   / /_
+/_____//_____/   |___/\___/ |_|  /____|
+                                                         
+                                          
+[06-Nov-25 20:20:16 - INFO] - __main__ - Bot is now running. Thanks to @SS_Botz
+[06-Nov-25 20:20:46 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-223' coro=<Bot.start_uptime_loop.<locals>.ping_loop() done, defined at /home/thaimozhi2005/aaaa/bot.py:96> exception=ServerSelectionTimeoutError("SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cb5a628e8fbd1f237f955, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>")>
+Traceback (most recent call last):
+  File "/home/thaimozhi2005/aaaa/bot.py", line 98, in ping_loop
+    bot_info = await db.get_uptime_bot()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/aaaa/database/database.py", line 64, in get_uptime_bot
+    return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2047, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2765, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2910, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 2858, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 409, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 387, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 294, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thaimozhi2005/venv/lib/python3.12/site-packages/pymongo/synchronous/topology.py", line 344, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cb5a628e8fbd1f237f955, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 20:20:46 - ERROR] - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7c7f3bf0dd00>
+[06-Nov-25 20:21:10 - ERROR] - plugins.uptime - Error in /addbot: SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 690cb5a628e8fbd1f237f955, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-00.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-01.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-sx0z5nf-shard-00-02.s9rgh6m.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1000) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[06-Nov-25 20:27:53 - INFO] - __main__ - Shutting down...
+[06-Nov-25 20:27:53 - INFO] - __main__ - Bot stopped.

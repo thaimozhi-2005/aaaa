@@ -1,0 +1,15 @@
+pyrofork==2.3.61
+TgCrypto
+pyromod==1.5
+APscheduler
+
+# --- For-Database ------------ #
+pymongo
+motor
+
+# --- For-Web-Response ------- #
+aiohttp
+
+# --- For-Web-Response ------- #
+pytz
+asyncio
