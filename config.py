@@ -3,9 +3,6 @@ from os import environ,getenv
 import logging
 from logging.handlers import RotatingFileHandler
 
-# Load environment variables (for local dev or Render)
-load_dotenv()
-
 # ==================================================
 # 🔐 Telegram API Credentials (from @BotFather & my.telegram.org)
 # ==================================================
