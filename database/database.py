@@ -43,11 +43,15 @@ class SS_BOTZ:
         user_ids = [doc['_id'] for doc in users_docs]
         return user_ids
 
-    # ===================[ UPTIME DATA ]=================== #
+    # ----------------- UPTIME BOT FUNCTIONS -----------------
     async def add_bot_for_uptime(self, username, webhook, interval, owner_id):
-        """Add or replace one bot for uptime monitoring"""
+        """
+        Add or replace one bot for uptime monitoring.
+        Uses a unique ID combining owner + username.
+        """
+        bot_id = f"{owner_id}_{username.lower()}"
         data = {
-            "_id": "ACTIVE_BOT",
+            "_id": bot_id,
             "username": username,
             "webhook": webhook,
             "interval": interval,
@@ -56,22 +60,22 @@ class SS_BOTZ:
             "last_checked": None,
             "status_msg": None
         }
-        await self.uptime_bots.replace_one({"_id": "ACTIVE_BOT"}, data, upsert=True)
+        await self.uptime_bots.replace_one({"_id": bot_id}, data, upsert=True)
         return True
+        
+    async def get_uptime_bot(self, username, owner_id):
+        bot_id = f"{owner_id}_{username.lower()}"
+        return await self.uptime_bots.find_one({"_id": bot_id})
 
-    async def get_uptime_bot(self):
-        """Get current monitored bot"""
-        return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
-
-    async def remove_uptime_bot(self):
-        """Remove monitored bot"""
-        result = await self.uptime_bots.delete_one({"_id": "ACTIVE_BOT"})
+    async def remove_uptime_bot(self, username, owner_id):
+        bot_id = f"{owner_id}_{username.lower()}"
+        result = await self.uptime_bots.delete_one({"_id": bot_id})
         return result.deleted_count > 0
 
-    async def update_uptime_status(self, username, is_online, msg):
-        """Update current status and add to logs"""
+    async def update_uptime_status(self, username, owner_id, is_online, msg):
+        bot_id = f"{owner_id}_{username.lower()}"
         await self.uptime_bots.update_one(
-            {"_id": "ACTIVE_BOT"},
+            {"_id": bot_id},
             {"$set": {
                 "is_online": is_online,
                 "last_checked": datetime.now(),
@@ -79,4 +83,5 @@ class SS_BOTZ:
             }}
         )
 
+# ----------------- Initialize DB -----------------
 db = SS_BOTZ(DB_URI, DB_NAME)
