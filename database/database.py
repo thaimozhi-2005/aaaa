@@ -43,11 +43,11 @@ class SS_BOTZ:
         user_ids = [doc['_id'] for doc in users_docs]
         return user_ids
 
-    # ===================[ UPTIME DATA ]=================== #
+    # ----------------------------------------------------
     async def add_bot_for_uptime(self, username, webhook, interval, owner_id):
-        """Add or replace one bot for uptime monitoring"""
+        """Add or replace a bot for uptime monitoring (per username)"""
         data = {
-            "_id": "ACTIVE_BOT",   # unique single document
+            "_id": username.lower(),  # use username as unique key
             "username": username,
             "webhook": webhook,
             "interval": interval,
@@ -56,29 +56,30 @@ class SS_BOTZ:
             "last_checked": None,
             "status_msg": None
         }
-        await self.uptime_bots.replace_one({"_id": "ACTIVE_BOT"}, data, upsert=True)
+        await self.uptime_bots.replace_one({"_id": username.lower()}, data, upsert=True)
         return True
 
-    async def get_uptime_bot(self):
-        """Get current monitored bot"""
-        return await self.uptime_bots.find_one({"_id": "ACTIVE_BOT"})
+    # ----------------------------------------------------
+    async def get_uptime_bot(self, username, owner_id):
+        """Get a specific monitored bot (username + owner verify)"""
+        return await self.uptime_bots.find_one({"_id": username.lower(), "owner_id": owner_id})
 
-    async def remove_uptime_bot(self):
-        """Remove monitored bot"""
-        result = await self.uptime_bots.delete_one({"_id": "ACTIVE_BOT"})
-        # optional check >0
+    # ----------------------------------------------------
+    async def remove_uptime_bot(self, username, owner_id):
+        """Remove monitored bot (only if owner matches)"""
+        result = await self.uptime_bots.delete_one({"_id": username.lower(), "owner_id": owner_id})
         return result.deleted_count > 0
 
+    # ----------------------------------------------------
     async def update_uptime_status(self, username, is_online, msg):
-        """Update current status and add to logs"""
+        """Update current bot status"""
         await self.uptime_bots.update_one(
-            {"_id": "ACTIVE_BOT"},
+            {"_id": username.lower()},
             {"$set": {
                 "is_online": is_online,
                 "last_checked": datetime.now(),
                 "status_msg": msg
             }}
         )
-
 # ----------------- Initialize DB -----------------
 db = SS_BOTZ(DB_URI, DB_NAME)
