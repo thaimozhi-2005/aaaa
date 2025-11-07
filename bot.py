@@ -89,8 +89,7 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(f"Could not send restart message: {e}")
 
-    async def start_uptime_loop(self):
-        """Continuously pings monitored bot webhook for uptime tracking"""
+    """async def start_uptime_loop(self):
         session = aiohttp.ClientSession()
 
         async def ping_loop():
@@ -112,7 +111,7 @@ class Bot(Client):
                 else:
                     await asyncio.sleep(300)  # no bot configured, recheck every 5 min
 
-        asyncio.create_task(ping_loop())
+        asyncio.create_task(ping_loop())"""
 
     async def stop(self, *args):
         await super().stop()
