@@ -76,7 +76,7 @@ class Bot(Client):
         )
 
         # Start background uptime loop
-        await self.start_uptime_loop()
+        #await self.start_uptime_loop()
 
         # Start Web Server
         app = web.AppRunner(await web_server())
